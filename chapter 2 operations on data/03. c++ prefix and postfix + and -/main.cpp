@@ -1,6 +1,23 @@
 #include <iostream>
 
-int main(){
-    auto result = (10 <=> 20) > 0;
-    std::cout << result << std::endl;
+int main() {
+    signed int val = 0;
+
+    std::cout << "val with postfix ++ = " << val++ << std::endl;
+    std::cout << "val after operation = " << val << std::endl;
+    std::cout << "----------------------" << std::endl;
+
+    std::cout << "val with postfix -- = " << val-- << std::endl;
+    std::cout << "val after operation = " << val << std::endl;
+    std::cout << "----------------------" << std::endl;
+
+    std::cout << "val with prefix ++ = " << ++val << std::endl;
+    std::cout << "val after operation = " << val << std::endl;
+    std::cout << "----------------------" << std::endl;
+
+    std::cout << "val with prefix -- = " << --val << std::endl;
+    std::cout << "val after operation = " << val << std::endl;
+    std::cout << "----------------------" << std::endl;
+
+    return 0;
 }
